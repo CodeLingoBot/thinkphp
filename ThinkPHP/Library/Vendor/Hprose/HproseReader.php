@@ -221,7 +221,7 @@ class HproseSimpleReader extends HproseRawReader {
         if (is_null($tag)) {
             $tag = $this->stream->getc();
         }
-        $result = NULL;
+        $result = null;
         switch ($tag) {
             case '0':
             case '1':

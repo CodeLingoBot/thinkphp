@@ -272,7 +272,7 @@ class _PHPRPC_Client {
             return $result;
         }
         $phprpc_errno = 0;
-        $phprpc_errstr = NULL;
+        $phprpc_errstr = null;
         if (isset($result['phprpc_errno'])) {
             $phprpc_errno = intval($result['phprpc_errno']);
         }
@@ -485,7 +485,7 @@ class _PHPRPC_Client {
             $content_length = (int)$header['content-length'][0];
         }
         else {
-            $content_length = NULL;
+            $content_length = null;
         }
         $transfer_encoding = isset($header['transfer-encoding']) ? $header['transfer-encoding'][0] : '';
         $content_encoding = isset($header['content-encoding']) ? $header['content-encoding'][0] : '';

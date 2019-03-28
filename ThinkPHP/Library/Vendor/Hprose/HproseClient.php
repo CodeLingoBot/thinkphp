@@ -65,7 +65,7 @@ abstract class HproseClient {
         }
         $stream = new HproseStringStream($response);
         $hproseReader = new HproseReader($stream);
-        $result = NULL;
+        $result = null;
         while (($tag = $hproseReader->checkTags(
             array(HproseTags::TagResult,
                   HproseTags::TagArgument,
